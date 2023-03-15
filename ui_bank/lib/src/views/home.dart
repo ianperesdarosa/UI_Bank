@@ -6,7 +6,7 @@ class HomeApp extends StatelessWidget {
   const HomeApp({super.key});
 
   @override
-  Widget build(BuildContexcontext) {
+  Widget build(BuildContext context) {
     return Stack(
       children: [
         SizedBox(
