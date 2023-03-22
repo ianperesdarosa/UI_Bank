@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_bank/src/views/home.dart';
-import 'package:ui_bank/src/views/main_page.dart';
+import 'package:ui_bank/src/views/welcome.dart';
 
 
 main() {
@@ -16,8 +16,8 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/':(context) => const HomeApp(),
-        '/MainPage':(context) => const MainPage(),
+        '/':(context) => const Welcome(),
+        '/MainPage':(context) => const Home(),
       },
     );
   }
