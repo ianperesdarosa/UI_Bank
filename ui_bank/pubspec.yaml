@@ -31,9 +31,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
-    - assets/images/
-    - assets/images/
-    - assets/icons/cardapio.png
-    - assets/icons/
-    - assets/icons/
+    - assets/images/business-entrepreneur-make-strategy-for-product-and-funding.png
+    - assets/images/business-man-illustrate-product-planning-option.png
+    - assets/images/back.jpg
+    - assets/images/business-product-planning-and-research.png
+    - assets/images/business-woman-achieving-the-goal-successfully.png
+    - assets/images/cycling.png
+    - assets/images/verificado.png
