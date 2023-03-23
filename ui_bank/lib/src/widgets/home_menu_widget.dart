@@ -74,7 +74,7 @@ class HomeMenuWidget extends StatelessWidget {
             ), 
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 45.0, bottom: 25.0),
+            padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 35.0, bottom: 25.0),
             child: Container(
               width: MediaQuery.of(context).size.width,
               height: 60.0,
@@ -83,7 +83,7 @@ class HomeMenuWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12.0)
               ),
               child: TextButton(onPressed: () {
-            
+                Navigator.pushNamed(context, '/actvieAc');
               }, child: const Text('Entrar!', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: Colors.white),
                 ),
               ),

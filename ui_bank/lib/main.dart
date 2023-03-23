@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_bank/src/views/activie_acount.dart';
 import 'package:ui_bank/src/views/home.dart';
 import 'package:ui_bank/src/views/welcome.dart';
 
@@ -18,6 +19,7 @@ class App extends StatelessWidget {
       routes: {
         '/':(context) => const Welcome(),
         '/Home':(context) => const Home(),
+        '/activeAc':(context) => const ActiveAc()
       },
     );
   }
