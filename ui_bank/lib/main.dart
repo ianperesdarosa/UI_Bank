@@ -19,7 +19,7 @@ class App extends StatelessWidget {
       routes: {
         '/':(context) => const Welcome(),
         '/Home':(context) => const Home(),
-        '/activeAc':(context) => const ActiveAc()
+        '/ActiveAc':(context) => const ActiveAc()
       },
     );
   }
