@@ -6,11 +6,14 @@ class CreatsAcount extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: const[
-        WidgetCreatAcount(),
-      ],
-    ); 
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: WidgetCreatAcount(),
+        ),
+      ),
+    );
   }
 }
 
@@ -164,6 +167,21 @@ class WidgetCreatAcount extends StatelessWidget {
                 ),
               ),
             ), 
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: 60.0,
+              decoration: BoxDecoration(
+                color: Colors.orange,
+                borderRadius: BorderRadius.circular(12.0)
+              ),
+              child: TextButton(onPressed: () {
+                Navigator.pushNamed(context, '/activeAc');
+              }, child: const Text('Próximo', style: TextStyle(color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w400),),
+              ),
+            ),
           ),
         ],
       );
