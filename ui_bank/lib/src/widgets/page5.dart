@@ -30,7 +30,7 @@ class _Page5State extends State<Page5> {
                 borderRadius: BorderRadius.circular(10.0)
               ),
                child: TextButton(onPressed: () {
-                  Navigator.pushNamed(context, '/Home');
+                  Navigator.pushNamed(context, '/home');
                }, child: const Text('Bora!', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: Colors.white),),
                ),
              ),

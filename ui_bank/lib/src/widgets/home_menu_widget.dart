@@ -83,14 +83,14 @@ class HomeMenuWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12.0)
               ),
               child: TextButton(onPressed: () {
-                Navigator.pushNamed(context, '/ActvieAc');
+                Navigator.pushNamed(context, '/activeAc');
               }, child: const Text('Entrar!', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: Colors.white),
                 ),
               ),
             ),
           ),
           TextButton(onPressed: () {
-
+            Navigator.pushNamed(context, '/creatsAcount');
           }, child: const Text('Não tenho conta', style: TextStyle(color: Colors.orange,),
             ),
           ),
