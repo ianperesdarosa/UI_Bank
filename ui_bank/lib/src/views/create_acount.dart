@@ -29,7 +29,7 @@ class WidgetCreatAcount extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/mainPage');
                 }, icon: const Icon(Icons.arrow_back, color: Colors.orange,size: 35,),
                 ),
               ],
@@ -178,7 +178,7 @@ class WidgetCreatAcount extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12.0)
               ),
               child: TextButton(onPressed: () {
-                Navigator.pushNamed(context, '/activeAc');
+                Navigator.pushNamed(context, '/welcomeAc');
               }, child: const Text('Próximo', style: TextStyle(color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w400),),
               ),
             ),

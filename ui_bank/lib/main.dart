@@ -4,6 +4,7 @@ import 'package:ui_bank/src/views/create_acount.dart';
 import 'package:ui_bank/src/views/home.dart';
 import 'package:ui_bank/src/views/main_page.dart';
 import 'package:ui_bank/src/views/welcome.dart';
+import 'package:ui_bank/src/views/welcome_acount.dart';
 
 
 main() {
@@ -24,6 +25,7 @@ class App extends StatelessWidget {
         '/mainPage':(context) => const MainPage(),
         '/creatsAcount':(context) => const CreatsAcount(),
         '/activeAc':(context) => const ActiveAc(),
+        '/welcomeAc': (context) => const WelcomeAc(),
       },
     );
   }
