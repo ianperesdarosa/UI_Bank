@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/active_acount_widget.dart';
+import 'main_page.dart';
 
-class ActiveAc extends StatelessWidget {
+class ActiveAc extends StatefulWidget {
   const ActiveAc({super.key});
 
+  @override
+  State<ActiveAc> createState() => _ActiveAcState();
+}
+
+class _ActiveAcState extends State<ActiveAc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +35,11 @@ class ActiveAc extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12.0),
                 ),
                 child: TextButton(onPressed:() {
-                  Navigator.pushNamed(context, '/mainPage');
+                  Navigator.push(context,
+                  MaterialPageRoute(
+                    builder: (context) => const MainPage()
+                      ),
+                    );
                 },
                  child: Image.asset('assets/icons/verificado.png'),
                 ),

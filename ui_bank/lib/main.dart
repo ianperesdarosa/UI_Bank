@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ui_bank/src/views/active_acount.dart';
 import 'package:ui_bank/src/views/create_acount.dart';
 import 'package:ui_bank/src/views/home.dart';
 import 'package:ui_bank/src/views/main_page.dart';
@@ -23,7 +22,6 @@ class App extends StatelessWidget {
         '/home':(context) => const Home(),
         '/mainPage':(context) => const MainPage(),
         '/creatsAcount':(context) => const CreatsAcount(),
-        '/activeAc':(context) => const ActiveAc(),
       },
     );
   }
