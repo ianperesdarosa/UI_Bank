@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui_bank/src/views/home.dart';
 import '../views/active_acount.dart';
 
-class WidgetCreatAcount extends StatefulWidget {
+class WidgetCreatAcount extends StatelessWidget {
   const WidgetCreatAcount({super.key});
 
-  @override
-  State<WidgetCreatAcount> createState() => _WidgetCreatAcountState();
-}
-
-class _WidgetCreatAcountState extends State<WidgetCreatAcount> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,8 +13,7 @@ class _WidgetCreatAcountState extends State<WidgetCreatAcount> {
             child: Row(
               children: [
                 IconButton(onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()),
-                );
+                 Navigator.pop(context);
                 }, icon: const Icon(Icons.arrow_back, color: Colors.orange,size: 35,),
                 ),
               ],
@@ -169,7 +162,7 @@ class _WidgetCreatAcountState extends State<WidgetCreatAcount> {
                 borderRadius: BorderRadius.circular(12.0)
               ),
               child: TextButton(onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const ActiveAc()),
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const ActiveAc()),
                 );
               }, child: const Text('Próximo', style: TextStyle(color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w400),),
               ),
