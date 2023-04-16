@@ -62,13 +62,18 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
         
-          Container(
-            width: 300.0,
-            height: 200.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12.0),color: Colors.orange,
+          ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              Container(
+              width: 300.0,
+              height: 200.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12.0),color: Colors.orange,
+              ),
             ),
-          ),
+            ],
+          )
         ],
 
 
