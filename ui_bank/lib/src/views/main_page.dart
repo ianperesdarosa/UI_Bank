@@ -62,9 +62,7 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
         
-          ListView(
-            scrollDirection: Axis.horizontal,
-            children: [
+          
               Container(
               width: 300.0,
               height: 200.0,
@@ -72,11 +70,7 @@ class _MainPageState extends State<MainPage> {
                 borderRadius: BorderRadius.circular(12.0),color: Colors.orange,
               ),
             ),
-            ],
-          )
-        ],
-
-
+        ]
       ),
 
       bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
