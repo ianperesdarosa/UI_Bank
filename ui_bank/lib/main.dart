@@ -5,7 +5,7 @@ import 'package:ui_bank/src/views/main_page.dart';
 import 'package:ui_bank/src/views/welcome.dart';
 
 
-main() {
+void main() {
   runApp(const App());
 }
 
