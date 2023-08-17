@@ -14,10 +14,10 @@ class HomeMenuWidget extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
+            children: [
               Padding(
                 padding: EdgeInsets.only(right:25.0, top: 32.0, bottom: 10.0),
                 child: Text('Login',

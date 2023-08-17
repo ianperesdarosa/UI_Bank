@@ -19,12 +19,12 @@ class WidgetCreatAcount extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 25.0, bottom: 50.0),
+          const Padding(
+            padding: EdgeInsets.only(right: 25.0, bottom: 50.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const[
+              children: [
                 Text('Cadastro',textAlign: TextAlign.end,style: TextStyle(color: Colors.orange, fontSize: 32.0, fontWeight: FontWeight.w600),
                 ),
               ],
